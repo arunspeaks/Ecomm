@@ -1,13 +1,9 @@
-
-
-
 {
   "name": "mdoule-2",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "npx ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -23,16 +19,19 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/animations": "^20.1.0",
     "@angular/common": "^20.1.0",
     "@angular/compiler": "^20.1.0",
     "@angular/core": "^20.1.0",
     "@angular/forms": "^20.1.0",
     "@angular/platform-browser": "^20.1.0",
+    "@angular/platform-browser-dynamic": "^20.1.0",
     "@angular/router": "^20.1.0",
     "bootstrap": "^5.3.7",
     "jwt-decode": "^4.0.0",
     "rxjs": "~7.8.0",
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.0"
   },
   "devDependencies": {
     "@angular/build": "^20.1.4",
